@@ -1,0 +1,40 @@
+{
+  "name": "@chinbor/git-pick",
+  "version": "0.0.6",
+  "description": "choose which staging area files to commit",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "git add",
+    "commit",
+    "staged"
+  ],
+  "author": "chinbor Mn",
+  "bin": {
+    "git-pick": "index.js",
+    "gp": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "kolorist": "^1.5.1",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "eslint": "^8.21.0",
+    "typescript": "^4.7.4"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
+}
