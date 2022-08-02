@@ -1,17 +1,26 @@
 {
   "name": "@chinbor/git-pick",
-  "version": "0.0.6",
-  "description": "choose which staging area files to commit",
+  "version": "0.0.7",
   "type": "module",
   "publishConfig": {
     "access": "public"
   },
+  "description": "choose which staging area files to commit",
   "keywords": [
     "git add",
     "commit",
     "staged"
   ],
+  "license": "MIT",
   "author": "chinbor Mn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinbor/git-pick.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chinbor/git-pick/issues"
+  },
+  "homepage": "https://github.com/chinbor/git-pick#readme",
   "bin": {
     "git-pick": "index.js",
     "gp": "index.js"
@@ -20,7 +29,6 @@
     "index.js",
     "README.md"
   ],
-  "license": "MIT",
   "main": "index.js",
   "engines": {
     "node": ">=16.0.0"
