@@ -1,10 +1,7 @@
 {
   "name": "@chinbor/git-pick",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
   "description": "choose which staging area files to commit",
   "keywords": [
     "git add",
@@ -33,12 +30,16 @@
   "engines": {
     "node": ">=16.0.0"
   },
+  "scripts": {
+    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
+  },
   "dependencies": {
     "kolorist": "^1.5.1",
     "prompts": "^2.4.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
+    "bumpp": "^8.2.1",
     "eslint": "^8.21.0",
     "typescript": "^4.7.4"
   },
